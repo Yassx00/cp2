@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Formulaire</title>
+</head>
+<body bgcolor="#ffffff">
+
+  <table width="100%" bgcolor="#000000" cellpadding="30" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+        <h1><font color="#ffffff" size="6">✉️ Contact Formulaire</font></h1>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table width="70%" cellpadding="30" cellspacing="0" border="1" bordercolor="#cccccc" align="center" bgcolor="#f9f9f9">
+    <tr>
+      <td>
+        <form action="submit.php" method="POST">
+          
+          <table width="100%" cellpadding="12" cellspacing="8" border="0">
+            
+            <tr>
+              <td width="100%">
+                <p><b>👤 Full Name <font color="red">*</font></b></p>
+                <input type="text" name="name" size="100%" required placeholder="John Doe">
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%">
+                <p><b>📧 Email Address <font color="red">*</font></b></p>
+                <input type="email" name="email" size="100%" required placeholder="john@example.com">
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%">
+                <p><b>📱 Phone Number</b></p>
+                <input type="tel" name="phone" size="100%" placeholder="+216 12 345 678">
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%">
+                <p><b>📌 Subject <font color="red">*</font></b></p>
+                <input type="text" name="subject" size="100%" required placeholder="How can we help?">
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%">
+                <p><b>💬 Message <font color="red">*</font></b></p>
+                <textarea name="message" rows="10" cols="100%" required placeholder="Please write your message here..."></textarea>
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%">
+                <p><b>🔗 How did you hear about us?</b></p>
+                <input type="radio" name="source" value="website" checked> 🌐 Website
+                <input type="radio" name="source" value="social"> 📲 Social Media
+                <input type="radio" name="source" value="friend"> 👥 Friend
+                <input type="radio" name="source" value="other"> 📰 Other
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%">
+                <p><b>Your Interests:</b></p>
+                <input type="checkbox" name="interest" value="web"> 🌐 Web Development
+                <input type="checkbox" name="interest" value="design"> 🎨 Design
+                <input type="checkbox" name="interest" value="cybersecurity"> 🔒 Cybersecurity
+                <input type="checkbox" name="interest" value="consulting"> 💼 Consulting
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%">
+                <p><b>🌍 Country <font color="red">*</font></b></p>
+                <select name="country" size="1" required>
+                  <option value="">-- Select a country --</option>
+                  <option value="tunisia">Gabes</option>
+                  <option value="usa">Tunisia</option>
+                  <option value="france">Sfax</option>
+                  <option value="uk">Djerba</option>
+                  <option value="canada">Sousse</option>
+                  <option value="germany">Zazis</option>
+                  <option value="other"> Other</option>
+                </select>
+              </td>
+            </tr>
+            
+            <tr bgcolor="#f0f0f0">
+              <td width="100%">
+                <input type="checkbox" name="agree" value="yes" required> I have read and agree to the <b>Terms of Service</b> and <b>Privacy Policy</b>
+              </td>
+            </tr>
+            
+            <tr>
+              <td width="100%" align="center">
+                <input type="submit" value=" Send Message" size="20">
+                <input type="reset" value=" Clear Form" size="20">
+              </td>
+            </tr>
+            
+          </table>
+          
+        </form>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table width="100%" bgcolor="#000000" cellpadding="20" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+        <p><font color="#ffffff"><b>📧 Thank you for reaching out! We'll get back to you soon.</b></font></p>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
